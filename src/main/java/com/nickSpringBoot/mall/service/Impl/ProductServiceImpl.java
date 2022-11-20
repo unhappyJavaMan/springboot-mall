@@ -26,4 +26,9 @@ public class ProductServiceImpl implements ProductService {
     public void uodateProduct(Integer productId, ProductRequest productRequest) {
         productDao.updateProduct(productId, productRequest);
     }
+
+    @Override
+    public void deleteProductById(Integer prductId) {
+        productDao.deleteProductById(prductId);
+    }
 }
